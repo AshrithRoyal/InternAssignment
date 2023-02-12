@@ -1,0 +1,135 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #e4f8f8d2;
+    border-radius: 12px;
+}
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+}
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;      
+    display: -webkit-flex;     
+    display: flex;             
+}
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: #222;
+    display: inline-block;
+}
+.menu ul a:hover {
+    background-color: #22b5de;
+    border-radius: 16px;
+    color: #fff;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+.card.y {
+    width: 1000px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.card-body.t {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.btn.btn-primary {
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #f1c40f;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
